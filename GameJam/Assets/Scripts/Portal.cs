@@ -19,10 +19,6 @@ public class Portal : MonoBehaviour
     {
         if(GameObject.Find("Key") == null) {
             SceneManager.LoadScene(LevelName);
-        } else
-        {
-            Debug.Log("LA CLE EXISTE");
-        }
-        
+        } 
     }
 }
