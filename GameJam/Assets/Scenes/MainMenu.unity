@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 1257567779}
   - component: {fileID: 1257567778}
   m_Layer: 5
-  m_Name: TextGameOver
+  m_Name: GameName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Heaver or Hell
+  m_Text: Heaven or Hell
 --- !u!222 &1257567779
 CanvasRenderer:
   m_ObjectHideFlags: 0
