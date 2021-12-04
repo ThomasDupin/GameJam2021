@@ -7,9 +7,10 @@ public class PlayerMovement : MonoBehaviour
     public float speedMovement = 5f;
     public Rigidbody2D rb;
     public Animator animator;
+
+   
         
     Vector2 movement;
-
 
     // Update is called once per frame
     void Update()
@@ -25,6 +26,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * speedMovement * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * speedMovement * Time.fixedDeltaTime);        
     }
 }
