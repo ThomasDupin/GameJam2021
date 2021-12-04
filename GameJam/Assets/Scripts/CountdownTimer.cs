@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class CountdownTimer : MonoBehaviour
 {
     float currentTime = 0f;
-    float startingTime = 20f;
+    float startingTime = 10f;
 
     [SerializeField] Text countdownText;
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class CountdownTimer : MonoBehaviour
         if (currentTime <= 0)
         {
             currentTime = 0;
-            // GAMEOVER
+            FindObjectOfType<GameManager>().EndGame();
         };
     }
 }
