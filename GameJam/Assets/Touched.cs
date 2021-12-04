@@ -6,6 +6,8 @@ using UnityEngine;
 public class Touched : MonoBehaviour
 {
     public string LevelName;
+    public string finishScene;
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -13,6 +15,10 @@ public class Touched : MonoBehaviour
         if (collider.name == "Enemy")
         {
             SceneManager.LoadScene(LevelName);
+        }
+        if (collider.name == "FinishPoint")
+        {
+            SceneManager.LoadScene(finishScene);
         }
     }
 }
