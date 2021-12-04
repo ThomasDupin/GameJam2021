@@ -15,10 +15,20 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
+    bool isMoving;
+
+    AudioSource audioSrc;
+
+    private void Start()
+    {
+        audioSrc = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update()
     {
+
+
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         
@@ -37,5 +47,20 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
+        
+
+        if(move.x !=0)
+        {
+            if (!audioSrc.isPlaying)
+            {
+                audioSrc.Play();
+            }
+
+        }else
+        {
+            audioSrc.Stop();
+        }
+
+        
     }
 }
