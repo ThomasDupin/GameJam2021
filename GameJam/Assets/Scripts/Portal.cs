@@ -17,6 +17,12 @@ public class Portal : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter()
     {
-        SceneManager.LoadScene(LevelName);
+        if(GameObject.Find("Key") == null) {
+            SceneManager.LoadScene(LevelName);
+        } else
+        {
+            Debug.Log("LA CLE EXISTE");
+        }
+        
     }
 }

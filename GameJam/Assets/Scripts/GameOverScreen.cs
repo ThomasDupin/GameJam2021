@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
-    public string LevelName;
+   
 
     void Start()
     {}
