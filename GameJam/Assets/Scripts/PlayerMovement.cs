@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
+        Physics2D.IgnoreLayerCollision(7, 8);
+
     }
 
     void FixedUpdate()

@@ -29,5 +29,7 @@ public class Shooting : MonoBehaviour
             Rigidbody2D rbz = bulletClone.GetComponent<Rigidbody2D>();
             rbz.AddForce(firePoint.up * bulletSpeed, ForceMode2D.Impulse);
         }
+        Physics2D.IgnoreLayerCollision(7, 8);
+
     }
 }
