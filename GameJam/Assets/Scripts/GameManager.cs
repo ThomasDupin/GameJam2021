@@ -8,14 +8,16 @@ public class GameManager : MonoBehaviour
 
     public float restartDelay = 1f;
 
+    public string LevelName;
 
-   public void EndGame()
+
+    public void EndGame()
     {
 
         if(gameHasEnded == false)
         {
             gameHasEnded = true;
-            Debug.Log("Game Over");
+            
             Invoke("Restart", restartDelay);
             
         }
@@ -24,6 +26,6 @@ public class GameManager : MonoBehaviour
 
     void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(LevelName);
     }
 }
