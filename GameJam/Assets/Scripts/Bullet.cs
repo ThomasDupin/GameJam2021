@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Collider2D collider = collision.collider;
-        if(collider.name == "Props")
+        if(collider.name == "Props" || collider.name == "Enemy")
         {
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(effect, 0.1f);

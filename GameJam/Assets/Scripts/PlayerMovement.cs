@@ -24,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
 
         Physics2D.IgnoreLayerCollision(7, 8);
 
+        if (GameObject.Find("Thunder(Clone)")){
+            Destroy(GameObject.Find("Thunder(Clone)"), 0.6f);
+        }
     }
 
     void FixedUpdate()
