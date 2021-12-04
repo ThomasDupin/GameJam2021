@@ -12,6 +12,11 @@ public class PlayerMovement2D : MonoBehaviour
         
     Vector2 movement;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     // Update is called once per frame
     void Update()
     {

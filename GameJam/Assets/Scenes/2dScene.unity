@@ -189,7 +189,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 7
+  maxSpeed: 0.1
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -6685,6 +6685,7 @@ GameObject:
   - component: {fileID: 752866043}
   - component: {fileID: 752866042}
   - component: {fileID: 752866048}
+  - component: {fileID: 752866049}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -6857,6 +6858,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &752866049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752866041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98ff9352920841a4c958c4a7ce1e05de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelName: 3dScene
 --- !u!1 &1230095481
 GameObject:
   m_ObjectHideFlags: 0
@@ -6923,7 +6937,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 7
+  maxSpeed: 0.1
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -8483,7 +8497,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 7
+  maxSpeed: 0.1
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
